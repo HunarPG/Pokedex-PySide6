@@ -15,9 +15,11 @@ class MainWindow(QMainWindow):
         self.ui.actionAbout_Pokedex.triggered.connect(self.show_about_pokedex)
 
     def show_about_qt(self):
-        QMessageBox.aboutQt(self)
+        dialog = QMessageBox()
+        dialog.aboutQt(self)
     
     def show_about_pokedex(self):
         title = "About Pokedex"
         text = "This is a pokedex app made by HunarPG"
-        QMessageBox.about(self, title, text)
+        dialog = QMessageBox()
+        dialog.about(self, title, text)
