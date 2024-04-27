@@ -7,21 +7,22 @@ move_names = []
 
 with open("database/pokemon.txt", "r") as pokemon_database:
     num_pokemon = 0
-    while num_pokemon<1025:
+    while num_pokemon < 1025:
         pokemon_names.append(pokemon_database.readline())
-        num_pokemon+=1
+        num_pokemon += 1
 
 with open("database/ability.txt", "r") as ability_database:
     num_ability = 0
-    while num_ability<310:
+    while num_ability < 310:
         ability_names.append(ability_database.readline())
-        num_ability+=1
+        num_ability += 1
 
 with open("database/move.txt", "r") as move_database:
     num_move = 0
-    while num_move<934:
+    while num_move < 934:
         move_names.append(move_database.readline())
-        num_move+=1
+        num_move += 1
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -42,7 +43,7 @@ class MainWindow(QMainWindow):
     def show_about_qt(self):
         dialog = QMessageBox()
         dialog.aboutQt(self)
-    
+
     def show_about_pokedex(self):
         title = "About Pokedex"
         text = "This is a pokedex app made by HunarPG"
