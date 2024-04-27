@@ -1,28 +1,6 @@
 from ui.mainwindow_ui import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow, QMessageBox
 
-pokemon_names = []
-ability_names = []
-move_names = []
-
-with open("database/pokemon.txt", "r") as pokemon_database:
-    num_pokemon = 0
-    while num_pokemon < 1025:
-        pokemon_names.append(pokemon_database.readline())
-        num_pokemon += 1
-
-with open("database/ability.txt", "r") as ability_database:
-    num_ability = 0
-    while num_ability < 310:
-        ability_names.append(ability_database.readline())
-        num_ability += 1
-
-with open("database/move.txt", "r") as move_database:
-    num_move = 0
-    while num_move < 934:
-        move_names.append(move_database.readline())
-        num_move += 1
-
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -36,9 +14,9 @@ class MainWindow(QMainWindow):
         self.ui.actionAbout_Qt.triggered.connect(self.show_about_qt)
         self.ui.actionAbout_Pokedex.triggered.connect(self.show_about_pokedex)
 
-        self.ui.comboBox_Pokemon.addItems(pokemon_names)
-        self.ui.combobox_Ability.addItems(ability_names)
-        self.ui.comboBox_Move.addItems(move_names)
+        self.add_pokemon()
+        self.add_ability()
+        self.add_move()
 
     def show_about_qt(self):
         dialog = QMessageBox()
@@ -49,3 +27,21 @@ class MainWindow(QMainWindow):
         text = "This is a pokedex app made by HunarPG"
         dialog = QMessageBox()
         dialog.about(self, title, text)
+
+    def add_pokemon(self):
+        with open("database/pokemon.txt", "r") as f:
+            for line in f:
+                line = line.strip("\n")
+                self.ui.comboBox_Pokemon.addItem(line)
+
+    def add_ability(self):
+        with open("database/ability.txt", "r") as f:
+            for line in f:
+                line = line.strip("\n")
+                self.ui.combobox_Ability.addItem(line)
+
+    def add_move(self):
+        with open("database/move.txt", "r") as f:
+            for line in f:
+                line = line.strip("\n")
+                self.ui.comboBox_Move.addItem(line)
