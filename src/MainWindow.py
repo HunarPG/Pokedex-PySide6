@@ -1,4 +1,4 @@
-from ui.mainwindow_ui import Ui_MainWindow
+from ui.ui_mainwindow import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow, QMessageBox
 
 
@@ -11,16 +11,11 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("Pokedex")
 
-        self.ui.actionAbout_Qt.triggered.connect(self.show_about_qt)
         self.ui.actionAbout_Pokedex.triggered.connect(self.show_about_pokedex)
 
         self.add_pokemon()
         self.add_ability()
         self.add_move()
-
-    def show_about_qt(self):
-        dialog = QMessageBox()
-        dialog.aboutQt(self)
 
     def show_about_pokedex(self):
         title = "About Pokedex"

@@ -85,7 +85,6 @@
      <string>About</string>
     </property>
     <addaction name="actionAbout_Pokedex"/>
-    <addaction name="actionAbout_Qt"/>
    </widget>
    <addaction name="menuAbout"/>
   </widget>
@@ -93,11 +92,6 @@
   <action name="actionAbout_Pokedex">
    <property name="text">
     <string>&amp;About Pokedex</string>
-   </property>
-  </action>
-  <action name="actionAbout_Qt">
-   <property name="text">
-    <string>About &amp;Qt</string>
    </property>
   </action>
  </widget>
