@@ -2,6 +2,7 @@
     "files": [
         "main.py",
         "ui/mainwindow.ui",
-        "src/MainWindow.py"
+        "src/MainWindow.py",
+        "ui/pokemon.ui"
     ]
 }
