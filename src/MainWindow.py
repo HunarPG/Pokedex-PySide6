@@ -47,15 +47,15 @@ class MainWindow(QMainWindow):
             for line in f:
                 line = line.strip("\n")
                 self.ui.comboBox_Move.addItem(line)
-    
+
     def open_pokemon_window(self):
         self.window = PokemonWindow()
         self.window.show()
-    
+
     def open_move_window(self):
         self.window = MoveWindow()
         self.window.show()
-    
+
     def open_ability_Window(self):
         self.window = AbilityWindow()
         self.window.show()
