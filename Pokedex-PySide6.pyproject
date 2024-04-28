@@ -4,6 +4,7 @@
         "ui/mainwindow.ui",
         "src/MainWindow.py",
         "ui/pokemon.ui",
-        "ui/ability.ui"
+        "ui/ability.ui",
+        "ui/move.ui"
     ]
 }
