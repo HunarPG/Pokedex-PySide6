@@ -8,5 +8,3 @@ class MoveWindow(QWidget):
 
         self.ui = Ui_MoveWindow()
         self.ui.setupUi(self)
-
-        self.setWindowTitle("Move Info")

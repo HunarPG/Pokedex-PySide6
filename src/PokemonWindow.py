@@ -8,5 +8,3 @@ class PokemonWindow(QWidget):
 
         self.ui = Ui_PokemonWindow()
         self.ui.setupUi(self)
-
-        self.setWindowTitle("Pokemon Info")

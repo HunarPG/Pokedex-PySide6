@@ -50,12 +50,15 @@ class MainWindow(QMainWindow):
 
     def open_pokemon_window(self):
         self.window = PokemonWindow()
+        self.window.setWindowTitle(self.ui.comboBox_Pokemon.currentText())
         self.window.show()
 
     def open_move_window(self):
         self.window = MoveWindow()
+        self.window.setWindowTitle(self.ui.comboBox_Move.currentText())
         self.window.show()
 
     def open_ability_Window(self):
         self.window = AbilityWindow()
+        self.window.setWindowTitle(self.ui.combobox_Ability.currentText())
         self.window.show()

@@ -8,5 +8,3 @@ class AbilityWindow(QWidget):
 
         self.ui = Ui_AbilityWindow()
         self.ui.setupUi(self)
-
-        self.setWindowTitle("Ability Info")
