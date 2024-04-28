@@ -54,7 +54,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_Ability">
       <item>
-       <widget class="QComboBox" name="combobox_Ability">
+       <widget class="QComboBox" name="comboBox_Ability">
         <property name="editable">
          <bool>true</bool>
         </property>
