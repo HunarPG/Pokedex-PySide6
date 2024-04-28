@@ -1,5 +1,6 @@
-from ui.ui_pokemon import Ui_PokemonWindow
 from PySide6.QtWidgets import QWidget
+
+from ui.ui_pokemon import Ui_PokemonWindow
 
 
 class PokemonWindow(QWidget):

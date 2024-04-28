@@ -1,5 +1,6 @@
-from ui.ui_move import Ui_MoveWindow
 from PySide6.QtWidgets import QWidget
+
+from ui.ui_move import Ui_MoveWindow
 
 
 class MoveWindow(QWidget):

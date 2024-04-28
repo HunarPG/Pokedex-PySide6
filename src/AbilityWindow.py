@@ -1,5 +1,6 @@
-from ui.ui_ability import Ui_AbilityWindow
 from PySide6.QtWidgets import QWidget
+
+from ui.ui_ability import Ui_AbilityWindow
 
 
 class AbilityWindow(QWidget):
