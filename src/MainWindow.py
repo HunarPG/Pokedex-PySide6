@@ -1,6 +1,7 @@
 from ui.ui_mainwindow import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow, QMessageBox
 from src.PokemonWindow import PokemonWindow
+from src.AbilityWindow import AbilityWindow
 
 
 class MainWindow(QMainWindow):
@@ -15,6 +16,7 @@ class MainWindow(QMainWindow):
         self.ui.actionAbout_Pokedex.triggered.connect(self.show_about_pokedex)
 
         self.ui.pushButton_PokemonData.clicked.connect(self.open_pokemon_window)
+        self.ui.pushButton_AbilityData.clicked.connect(self.open_move_window)
 
         self.add_pokemon()
         self.add_ability()
@@ -46,4 +48,8 @@ class MainWindow(QMainWindow):
     
     def open_pokemon_window(self):
         self.window = PokemonWindow()
+        self.window.show()
+    
+    def open_move_window(self):
+        self.window = AbilityWindow()
         self.window.show()
