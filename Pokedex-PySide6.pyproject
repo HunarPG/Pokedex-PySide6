@@ -5,12 +5,6 @@
         "src/MainWindow.py",
         "database/pokemon.txt",
         "database/move.txt",
-        "database/ability.txt",
-        "ui/pokemon.ui",
-        "ui/ability.ui",
-        "ui/move.ui",
-        "src/PokemonWindow.py",
-        "src/MoveWindow.py",
-        "src/AbilityWindow.py"
+        "database/ability.txt"
     ]
 }
