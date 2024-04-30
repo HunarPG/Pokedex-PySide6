@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QWidget
 from PySide6.QtGui import QPixmap
-from ui.pokemon.ui_bulbasaur import Ui_Form
+from ui.pokemon.ui_bulbasaur import Ui_BulbasaurWindow
 
 class BulbasaurWindow(QWidget):
     def __init__(self):

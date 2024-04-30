@@ -162,6 +162,7 @@ cython_debug/
 # Qt Files
 ui/*.py
 *.pyproject.user
+ui/pokemon/*.py
 
 # Pycharm Files
 .idea
