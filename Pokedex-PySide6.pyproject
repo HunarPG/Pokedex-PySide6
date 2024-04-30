@@ -5,6 +5,8 @@
         "src/MainWindow.py",
         "database/pokemon.txt",
         "database/move.txt",
-        "database/ability.txt"
+        "database/ability.txt",
+        "ui/pokemon/bulbasaur.ui",
+        "src/pokemon/BulbasaurWindow.py"
     ]
 }
